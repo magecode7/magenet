@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: url(./img/ansubin0925hellomynameissoobin.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  text-align: center;
+  font-style: italic;
+}
+
+a {
+  padding: 10px;
+}

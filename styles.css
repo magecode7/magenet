@@ -1,24 +1,70 @@
+:root {
+  --background-color: #222;
+  --font-color: white;
+  --main-color: rgb(100, 75, 200);
+  --box-shadow: 0 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+::selection {
+  background: var(--font-color);
+  color: var(--background-color);
+}
+
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
-
-main {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  background: url(./img/ansubin0925hellomynameissoobin.gif);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
-    2px 2px 0 #000;
+header {
+  background-color: var(--main-color);
+  color: var(--font-color);
+  padding: 5px;
   text-align: center;
+  box-shadow: var(--box-shadow);
+}
+header a {
+  color: var(--font-color);
+}
+section {
+  padding: 25px;
+  margin: 15px auto;
+  max-width: 800px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+h2 {
+  color: var(--main-color);
+}
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul,
+ol {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: var(--main-color);
+  color: var(--background-color);
+  box-shadow: var(--box-shadow);
+}
+footer a {
+  color: var(--font-color);
   font-style: italic;
 }
-
-a {
-  padding: 10px;
+img {
+  width: 50vw;
+  max-width: 50vh;
 }

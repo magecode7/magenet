@@ -4,40 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Настройка VPN</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
   </head>
-
   <body>
-    <header>
-      <h1>Руководство по установке VPN</h1>
+    <header class="text-center py-5">
+      <div class="container" data-aos="fade-down">
+        <h1 class="display-5 fw-bold">Руководство по установке VPN</h1>
+        <a href="./index.html" class="btn btn-outline-light btn-lg"
+          >На главную</a
+        >
+      </div>
     </header>
 
-    <section>
-      <a href="./index.html" class="button">На главную</a>
-      <h2 id="get_config">1. Получите подписку VPN</h2>
-      <p>
-        Для оформления подписки, свяжитесь с нами в
-        <a href="https://t.me/+suNFOOxEQoI5M2Ji" target="_blank">Telegram</a>
-        или получите конфигурацию у других провайдеров
-      </p>
+    <main class="container">
+      <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="card">
+          <h2 id="get_config">1. Получите подписку VPN</h2>
+          <p>
+            Свяжитесь с нами в
+            <a href="https://t.me/+suNFOOxEQoI5M2Ji" target="_blank"
+              >Telegram</a
+            >
+            или получите конфигурацию у других провайдеров.
+          </p>
+        </div>
+      </section>
 
-      <h2 id="get_client">2. Установите клиент VPN</h2>
-      <p>
-        Для подключения к VPN, необходимо установить клиент поддерживающий VPN
-        подписку.
-      </p>
-      <p>Мы рекомендуем Hiddify, для его установки выполните следующие шаги:</p>
-      <ol>
-        <li>
-          Скачайте и установите клиент Hiddify, подходящий для вашей
-          операционной системы:
+      <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="card">
+          <h2 id="get_client">2. Установите клиент VPN</h2>
+          <p>
+            Для подключения необходимо установить клиент. Мы рекомендуем
+            Hiddify:
+          </p>
           <ul>
             <li>
               <a
                 href="https://github.com/hiddify/hiddify-app/releases"
                 target="_blank"
-                >GitHub
-              </a>
+                >GitHub</a
+              >
             </li>
             <li>
               <a
@@ -48,76 +59,70 @@
             </li>
             <li>
               <a
-                href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone"
+                href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532"
                 target="_blank"
-                >App Store
-              </a>
+                >App Store</a
+              >
             </li>
             <li>
               <a
                 href="https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-US&gl=US"
                 target="_blank"
-                >Microsoft Store
-              </a>
+                >Microsoft Store</a
+              >
             </li>
           </ul>
-        </li>
-        <li>
-          Скопируйте полученную конфигурацию подписки
-          <div>
-            <img src="img/vpn_install_0.png" alt="Копирование конфигурации" />
-          </div>
-        </li>
-        <li>
-          Откройте приложение и выполните следующие действия:
+          <p>Скопируйте конфигурацию подписки:</p>
+          <img src="img/vpn_install_0.png" alt="Копирование конфигурации" />
+          <p>Добавьте её в приложение:</p>
           <ul>
             <li>
-              Выберите "Новый профиль"
-              <div>
-                <img
-                  src="img/vpn_install_1.jpg"
-                  alt="Кнопка 'Новый профиль'."
-                />
-              </div>
+              Выберите "Новый профиль"<br /><img
+                src="img/vpn_install_1.jpg"
+                alt="Новый профиль"
+              />
             </li>
             <li>
-              Нажмите "Добавить из буфера обмена"
-              <div>
-                <img
-                  src="img/vpn_install_2.jpg"
-                  alt="Кнопка 'Добавить из буфера обмена'"
-                />
-              </div>
+              Нажмите "Добавить из буфера обмена"<br /><img
+                src="img/vpn_install_2.jpg"
+                alt="Добавить из буфера"
+              />
             </li>
           </ul>
-        </li>
-        <li>
-          Теперь вы можете подключаться к VPN
-          <div>
-            <img src="img/vpn_install_3.jpg" alt="Подключение" />
-          </div>
-        </li>
-      </ol>
-    </section>
+          <p>
+            Подключитесь к VPN:<br /><img
+              src="img/vpn_install_3.jpg"
+              alt="Подключение"
+            />
+          </p>
+        </div>
+      </section>
 
-    <section>
-      <h2>Дополнительно</h2>
-      <ul>
-        <li>
-          По умолчанию Hiddify не проксирует региональные домены и IP-адреса.
-          Чтобы проксировать всё, необходимо в настройках выбрать регион
-          "Другой".
-        </li>
-        <li>
-          На ПК версиях по умолчанию стоит режим "системного прокси". Для работы
-          некоторых программ включите режим "VPN".
-        </li>
-        <li>
-          В разделе "Прокси" при включенном VPN можно выбрать текущую
-          конфигурацию прокси. По умолчанию выбирается та, что имеет наименьшую
-          задержку.
-        </li>
-      </ul>
-    </section>
+      <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="card">
+          <h2>Дополнительно</h2>
+          <ul>
+            <li>
+              Для полного проксирования выберите регион "Другой" в настройках.
+            </li>
+            <li>
+              На ПК включите режим "VPN", если требуется для некоторых программ.
+            </li>
+            <li>
+              В разделе "Прокси" выберите наилучшую конфигурацию по задержке.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html>

@@ -23,7 +23,7 @@ li {
   transition: transform 0.3s;
 }
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 footer {
   color: #777;

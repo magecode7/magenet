@@ -1,35 +1,86 @@
-# Magenet
+# Magenet - Secure and Anonymous Internet Access Portal
 
-Веб-сайт для обеспечения свободного доступа в интернет с помощью VPN-сервиса.
+Magenet is a web-based platform that provides users with free and secure internet access through VPN services. The platform offers a user-friendly interface for VPN setup instructions, a comprehensive knowledge base, and direct support through Telegram.
 
-## Описание проекта
+The platform features a modern, responsive design with smooth animations and a dark theme for better user experience. It includes detailed VPN setup guides, recommended VPN clients, and additional resources like Windows/Office activation guides and ISO downloads. The platform prioritizes user privacy and accessibility while maintaining a clean, professional interface.
 
-Magenet - это проект, направленный на обеспечение безопасного, анонимного и доступного интернета для всех пользователей. Сайт предоставляет информацию о настройке VPN и базу знаний по безопасному использованию интернета.
+## Repository Structure
+```
+magenet/
+├── index.html          # Main landing page with service overview and navigation
+├── library.html        # Knowledge base with Windows/Office resources and VPN clients
+├── vpn_install.html    # Step-by-step VPN installation guide
+└── styles.css         # Global styling with dark theme and animations
+```
 
-## Структура проекта
+## Usage Instructions
+### Prerequisites
+- Modern web browser (Chrome, Firefox, Safari, or Edge)
+- Internet connection
+- Basic understanding of VPN concepts
 
-- `index.html` - главная страница сайта
-- `vpn_install.html` - руководство по установке и настройке VPN
-- `library.html` - база знаний
-- `styles.css` - стили для всех страниц
-- `img/` - директория с изображениями
-- `fonts/` - директория со шрифтами
+### Installation
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
 
-## Функциональность
+2. Deploy to a web server or open locally:
+```bash
+# Using Python's built-in server
+python -m http.server 8000
 
-- Информация о проекте Magenet
-- Пошаговое руководство по настройке VPN с иллюстрациями
-- База знаний по безопасному использованию интернета
-- Контактная информация для связи через Telegram
+# Using Node.js http-server
+npx http-server
+```
 
-## Технологии
+### Quick Start
+1. Navigate to `index.html` in your web browser
+2. Click "Настройка VPN" for VPN setup instructions
+3. Follow the step-by-step guide to:
+   - Obtain VPN configuration
+   - Install recommended VPN client
+   - Configure VPN connection
 
-- HTML5
-- CSS3
-- Bootstrap 5.3.3
-- AOS (Animate On Scroll) для анимаций
+### More Detailed Examples
+#### Accessing the Knowledge Base
+1. Click "База знаний" on the main page
+2. Browse available sections:
+   - Windows/Office activation guides
+   - OS image downloads
+   - VPN client recommendations
 
-## Установка и запуск
+### Troubleshooting
+Common Issues:
+1. Images not loading
+   - Verify image paths in the `img/` directory
+   - Check file permissions
+   - Ensure proper image formats (PNG/JPG)
 
-1. Клонируйте репозиторий
-2. Откройте `index.html` в любом современном браузере
+2. Styling issues
+   - Confirm Bootstrap CDN is accessible
+   - Verify `styles.css` is properly linked
+   - Clear browser cache
+
+3. Animations not working
+   - Check AOS library is properly loaded
+   - Verify JavaScript is enabled
+   - Console for potential errors
+
+## Data Flow
+The website follows a simple static content delivery model with client-side animations and styling.
+
+```ascii
+User Request → Web Server → Static Files (HTML/CSS) → Browser Rendering → User Interface
+                                                  ↓
+                              External Resources (Bootstrap/AOS)
+```
+
+Component Interactions:
+1. HTML files provide structure and content
+2. CSS (styles.css) handles visual presentation
+3. Bootstrap provides responsive layout and components
+4. AOS library manages scroll animations
+5. External links connect to Telegram and download resources
+6. Browser handles all rendering and user interactions
+7. No server-side processing or database required

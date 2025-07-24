@@ -9,164 +9,141 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link href="./styles.css" rel="stylesheet" />
-
-    <style>
-      summary {
-        font-size: 1.25rem;
-        font-weight: 600;
-        cursor: pointer;
-      }
-    </style>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
   </head>
-
   <body>
     <header class="text-center py-5 mb-5">
       <div class="container" data-aos="fade-down">
-        <div class="position-absolute top-0 end-0 p-3">
-          <button id="theme-toggle" class="btn btn-outline-light">
-            <i class="fas fa-sun"></i>
-          </button>
-        </div>
-        <h1 class="display-4 fw-bold"><i class="fas fa-book"></i> База знаний</h1>
-        <div class="mt-4">
-          <a href="./index.html" class="btn btn-outline-light btn-lg"
-            ><i class="fas fa-home"></i> На главную</a
-          >
-        </div>
+        <h1 class="display-4 fw-bold">
+          <i class="fas fa-book"></i> База знаний
+        </h1>
+        <a href="index.html" class="btn btn-outline-light btn-lg mt-4"
+          ><i class="fas fa-home"></i> На главную</a
+        >
       </div>
     </header>
 
     <main class="container">
-      <section>
-        <details
-          open
-          class="card"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-        >
-          <summary><i class="fab fa-windows"></i> Windows / Microsoft Office</summary>
-          <ul class="mt-3">
-            <li>
-              <i class="fas fa-key"></i> Активация: <br />
-              <u>Онлайн</u> скопировав в Powershell:
-              <b>irm https://get.activated.win | iex</b><br />
-              Или
-              <a
-                href="https://github.com/massgravel/Microsoft-Activation-Scripts"
-                target="_blank"
-                >Офлайн</a
-              >
-            </li>
-            <li class="mt-3">
-              <i class="fas fa-download"></i> Образы Windows:
-              <ul>
-                <li>
-                  <i class="fab fa-windows"></i> Windows 11 —
-                  <a
-                    href="https://drive.massgrave.dev/ru-ru_windows_11_consumer_editions_version_23h2_updated_nov_2024_x64_dvd_212bfc41.iso"
-                    target="_blank"
-                    >X64</a
-                  >
-                </li>
-                <li>
-                  <i class="fab fa-windows"></i> Windows 10 —
-                  <a
-                    href="https://drive.massgrave.dev/ru-ru_windows_10_consumer_editions_version_22h2_updated_nov_2024_x64_dvd_3eeacab9.iso"
-                    target="_blank"
-                    >X64</a
-                  >
-                  |
-                  <a
-                    href="https://drive.massgrave.dev/ru-ru_windows_10_consumer_editions_version_22h2_updated_nov_2024_x86_dvd_3eeacab9.iso"
-                    target="_blank"
-                    >X86</a
-                  >
-                </li>
-                <li>
-                  <i class="fab fa-windows"></i> Windows 8.1 —
-                  <a
-                    href="https://drive.massgrave.dev/ru_windows_8.1_pro_vl_with_update_x64_dvd_6050899.iso"
-                    target="_blank"
-                    >X64</a
-                  >
-                  |
-                  <a
-                    href="https://drive.massgrave.dev/ru_windows_8.1_pro_vl_with_update_x86_dvd_6050937.iso"
-                    target="_blank"
-                    >X86</a
-                  >
-                </li>
-                <li>
-                  <i class="fab fa-windows"></i> Windows 7 —
-                  <a
-                    href="https://drive.massgrave.dev/ru_windows_7_professional_with_sp1_x64_dvd_u_677024.iso"
-                    target="_blank"
-                    >X64</a
-                  >
-                  |
-                  <a
-                    href="https://drive.massgrave.dev/ru_windows_7_professional_with_sp1_x86_dvd_u_677084.iso"
-                    target="_blank"
-                    >X86</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="mt-3">
-              <i class="far fa-file-word"></i> Образы Office:
-              <a
-                href="https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img"
-                target="_blank"
-                >2021</a
-              >
-              |
-              <a
-                href="https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/en-us/ProfessionalRetail.img"
-                target="_blank"
-                >2013</a
-              >
-            </li>
-          </ul>
-        </details>
+      <details open class="card" data-aos="fade-up">
+        <summary>
+          <i class="fab fa-windows"></i> Windows / Microsoft Office
+        </summary>
+        <ul class="mt-3">
+          <li>
+            <i class="fas fa-key"></i> Активация:<br /><u>Онлайн</u> скопировав
+            в Powershell: <b>irm https://get.activated.win | iex</b><br />Или
+            <a
+              href="https://github.com/massgravel/Microsoft-Activation-Scripts"
+              target="_blank"
+              >Офлайн</a
+            >
+          </li>
+          <li class="mt-3">
+            <i class="fas fa-download"></i> Образы Windows:
+            <ul>
+              <li>
+                <i class="fab fa-windows"></i> Windows 11 —
+                <a
+                  href="https://drive.massgrave.dev/ru-ru_windows_11_consumer_editions_version_23h2_updated_nov_2024_x64_dvd_212bfc41.iso"
+                  target="_blank"
+                  >X64</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-windows"></i> Windows 10 —
+                <a
+                  href="https://drive.massgrave.dev/ru-ru_windows_10_consumer_editions_version_22h2_updated_nov_2024_x64_dvd_3eeacab9.iso"
+                  target="_blank"
+                  >X64</a
+                >
+                |
+                <a
+                  href="https://drive.massgrave.dev/ru-ru_windows_10_consumer_editions_version_22h2_updated_nov_2024_x86_dvd_3eeacab9.iso"
+                  target="_blank"
+                  >X86</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-windows"></i> Windows 8.1 —
+                <a
+                  href="https://drive.massgrave.dev/ru_windows_8.1_pro_vl_with_update_x64_dvd_6050899.iso"
+                  target="_blank"
+                  >X64</a
+                >
+                |
+                <a
+                  href="https://drive.massgrave.dev/ru_windows_8.1_pro_vl_with_update_x86_dvd_6050937.iso"
+                  target="_blank"
+                  >X86</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-windows"></i> Windows 7 —
+                <a
+                  href="https://drive.massgrave.dev/ru_windows_7_professional_with_sp1_x64_dvd_u_677024.iso"
+                  target="_blank"
+                  >X64</a
+                >
+                |
+                <a
+                  href="https://drive.massgrave.dev/ru_windows_7_professional_with_sp1_x86_dvd_u_677084.iso"
+                  target="_blank"
+                  >X86</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="mt-3">
+            <i class="far fa-file-word"></i> Образы Office:
+            <a
+              href="https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img"
+              target="_blank"
+              >2021</a
+            >
+            |
+            <a
+              href="https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/en-us/ProfessionalRetail.img"
+              target="_blank"
+              >2013</a
+            >
+          </li>
+        </ul>
+      </details>
 
-        <details
-          class="card"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-        >
-          <summary><i class="fas fa-shield-alt"></i> VPN клиенты</summary>
-          <ul class="mt-3">
-            <li>
-              <a
-                href="https://github.com/hiddify/hiddify-app/releases"
-                target="_blank"
-                >Hiddify</a
-              >
-              — рекомендовано
-            </li>
-            <li>
-              <a
-                href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases"
-                target="_blank"
-                >NekoBox</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/2dust/v2rayNG/releases"
-                target="_blank"
-                >v2rayNG</a
-              >
-            </li>
-            <li><a href="https://www.happ.su/main" target="_blank">Happ</a></li>
-          </ul>
-        </details>
-      </section>
+      <details class="card" data-aos="fade-up">
+        <summary><i class="fas fa-shield-alt"></i> Прокси клиенты</summary>
+        <ul class="mt-3">
+          <li>
+            <a
+              href="https://github.com/hiddify/hiddify-app/releases"
+              target="_blank"
+              >Hiddify</a
+            >
+            — рекомендовано
+          </li>
+          <li>
+            <a
+              href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases"
+              target="_blank"
+              >NekoBox</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/2dust/v2rayNG/releases" target="_blank"
+              >v2rayNG</a
+            >
+          </li>
+          <li><a href="https://www.happ.su/main" target="_blank">Happ</a></li>
+        </ul>
+      </details>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="./scripts.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>

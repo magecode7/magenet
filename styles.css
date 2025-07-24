@@ -6,7 +6,10 @@ body {
 header {
   background: linear-gradient(0deg, #0d0d0d, #000000);
 }
-h1, h2, p, li {
+h1,
+h2,
+p,
+li {
   color: #ffffff;
 }
 .card {

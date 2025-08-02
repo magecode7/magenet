@@ -46,4 +46,7 @@ img {
     width: 100%;
     max-width: 280px;
   }
+  img {
+    width: 100%;
+  }
 }

@@ -36,3 +36,14 @@ img {
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  .d-flex.gap-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-lg {
+    width: 100%;
+    max-width: 280px;
+  }
+}

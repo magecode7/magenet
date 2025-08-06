@@ -82,7 +82,7 @@
         
         try {
           const start = performance.now();
-          await fetch('https://vpn.m4g3.ru:1337', { mode: 'no-cors' });
+          await fetch('https://vpn.m4g3.ru:8443', { mode: 'no-cors' });
           const ping = Math.round(performance.now() - start);
           display.textContent = ping + ' мс';
         } catch {
